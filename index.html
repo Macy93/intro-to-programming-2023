@@ -55,11 +55,29 @@ Michelle Wagner
 
         <section>
             <h1>Connect</h1>
-            <a href="mailto:4mwagner93@gmail.com">Michelle Wagner</a>
+            <a href="mailto:4mwagner93@gmail.com">Michelle Wagner</a><br>
 
             <a href="https://www.linkedin.com/in/michelle-wagner" target="_blank">Michelle's Linked Profile</a>
         </section>
     </div>
+    <section>
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+            <label for="name">Name:</label> <!--put in a label for to match with id-->
+            <input type="text" id="name" name="usersName" required="true" placeholder="Your Name"><br>
+            <label for="usersEmail">Email:</label>
+            <input type="email" id="usersEmail" name="usersEmail" required="true" placeholder="Your Email Address"><br>
+            <label for="usersMessage">Message:</label>
+            <textarea name="usersMessage" id="usersMessage" required="true" placeholder="Message"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+    </section>
+
     <footer>
 
     </footer>
