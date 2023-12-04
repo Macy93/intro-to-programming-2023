@@ -39,22 +39,48 @@ messageForm.addEventListener('submit', (e) => {
     const newMessage = document.createElement('li');
 
     newMessage.innerHTML = `<a href= mailto:${email}>${name} </a>
-    <span>wrote: ${message}&nbsp</span>`
+    <span>wrote: ${message}&nbsp</span>`    
     messageForm.reset();
+
+    newMessage.style.fontSize="25px";// where to put this? wanting to change font size of this
+
 
     const removeButton = document.createElement('button');
     removeButton.innerText = "remove";
     removeButton.type="button";
+    removeButton.style.fontFamily= "josefin sans";
+    removeButton.style.backgroundColor= "736ced";
+    removeButton.style.color= "white";
+    removeButton.style.borderRadius="12px";
+    removeButton.style.fontSize= "18px";
+    removeButton.style.padding= "15px";
+    removeButton.style.margin= "25px";
+    removeButton.style.shadowBox= "100px 100px";
 
     removeButton.addEventListener('click', (e) => {
         e.preventDefault();
 
         const entry = removeButton.parentNode;
-        entry.remove();
-    
+        entry.remove();    
 
     });
 
+    removeButton.addEventListener('mouseover', (e) => {   // --------lost the remove button
+        e.preventDefault()
+        removeButton.style.backgroundColor = 'purple'
+    })
+
+    removeButton.addEventListener('mouseleave', (e) => {
+        e.preventDefault()
+        removeButton.style.color = 'white'
+        removeButton.style.backgroundColor = 'blue'
+        
+    })       
+    
+
+    
+
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
-});
+});// -----not sure this is supposed to be here--------------
+
