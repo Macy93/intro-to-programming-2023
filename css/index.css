@@ -1,0 +1,187 @@
+
+html{ /*changing the default text color*/
+    color: af3b6e;
+    font-family: Josefin sans;    
+}
+
+html p{
+    font-size: 18px;
+}
+
+#myName{
+    font-size:75px;
+    text-align: center;
+    padding: 25;
+    color:424651
+}
+
+body{
+    background-color: #bce7fd;
+}
+
+#about{
+    background-color: f2d0a9;
+    padding: 6px;
+}
+
+#about h1{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+#about p{
+    margin-left: 25px;
+}
+
+#experience{
+    background-color: 21fa90;    
+    padding: 6px;
+}
+
+#experience h1{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+#experience p{
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+#experience li{
+    margin-left: 50px;
+}
+#experience .sales{/*---------------come back to this--------------*/
+    margin-left: 71px;
+}
+
+#skills{
+    background-color: c492b1;    
+    padding: 6px;   
+}
+
+#skills h2{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+#skills ul{
+    margin-left: 50px; 
+    font-size: 18px;
+}
+
+#connect{
+    background-color: eeb4b3;
+    padding:6px;
+}
+
+#connect h1{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+#connect a{
+    margin-left: 25px;
+}
+
+#contactInfo{
+    background-color: e9d985;    
+    padding: 6px;   
+}
+
+
+#contactInfo h2{
+    font-size: 40;
+    color: 424651;
+}
+#name{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Josefin sans; 
+    background-color: c4cad0;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 25px;
+    box-shadow: 10px 10px;
+
+}
+
+.userName{
+    font-size: 18px;
+}
+
+#usersEmail{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Josefin sans; 
+    background-color: c4cad0;
+    border-radius: 12px;
+    padding: 15px; 
+    margin: 25px;
+    box-shadow: 10px 10px;
+
+}
+.usersEmail{
+    font-size: 18px;
+}
+
+#usersMessage{
+    font-size:18px;
+    font-weight: bold;
+    font-family: Josefin sans; 
+    background-color: c4cad0;
+    border-radius: 12px;
+    padding: 15px; 
+    margin:25px;
+    box-shadow: 10px 10px;
+
+}
+
+.usersMessage{
+    font-size: 18px;    
+}
+
+.messageInfo{
+    font-size: 30px;
+    color: 424651;
+}
+
+
+#messages{
+    background-color: b2bd7e;    
+    padding: 50px;   
+}
+
+
+
+.submitBut{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: da667b;
+    color: white;
+    padding: 14px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .submitBut:hover {   /*-------------can't get this to work-----------*/
+    background-color: #fdcdf8;
+    color: black;
+}
+
+
+
+
+   
+
+
+
+
+
+
