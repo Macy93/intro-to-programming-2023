@@ -42,7 +42,7 @@ messageForm.addEventListener('submit', (e) => {
     <span>wrote: ${message}&nbsp</span>`    
     messageForm.reset();
 
-    newMessage.style.fontSize="25px";// where to put this? wanting to change font size of this
+    newMessage.style.fontSize="25px";
 
 
     const removeButton = document.createElement('button');
@@ -65,7 +65,7 @@ messageForm.addEventListener('submit', (e) => {
 
     });
 
-    removeButton.addEventListener('mouseover', (e) => {   // --------lost the remove button
+    removeButton.addEventListener('mouseover', (e) => {   
         e.preventDefault()
         removeButton.style.backgroundColor = 'purple'
     })
@@ -82,5 +82,5 @@ messageForm.addEventListener('submit', (e) => {
 
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
-});// -----not sure this is supposed to be here--------------
+});
 
