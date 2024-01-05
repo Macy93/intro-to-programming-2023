@@ -84,3 +84,29 @@ messageForm.addEventListener('submit', (e) => {
     messageList.appendChild(newMessage);
 });
 
+
+const githubRequest = new XMLHttpRequest();
+githubRequest.open('GET','https://api.github.com/users/Macy93/repos');
+githubRequest.send();
+
+const projectSelection = document.getElementById("projects");
+const projectList = projectSelection.querySelector('ul'); 
+
+
+githubRequest.addEventListener("load", function(){  
+    var repositories = JSON.parse(this.responseText);
+  
+    console.log(repositories);  
+
+    for(i = 0; i < repositories.length; i++){
+      const project = document.createElement('li');
+       project.innerText = repositories[i].name;  
+       projectList.appendChild(project);   
+        
+    }  
+});
+
+
+
+
+
