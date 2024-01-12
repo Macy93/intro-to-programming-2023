@@ -84,14 +84,14 @@ messageForm.addEventListener('submit', (e) => {
     messageList.appendChild(newMessage);
 });
 
-
+/*
+-----------6.1 ASSIGNMENT---------
 const githubRequest = new XMLHttpRequest();
 githubRequest.open('GET','https://api.github.com/users/Macy93/repos');
 githubRequest.send();
 
 const projectSelection = document.getElementById("projects");
 const projectList = projectSelection.querySelector('ul'); 
-
 
 githubRequest.addEventListener("load", function(){  
     var repositories = JSON.parse(this.responseText);
@@ -106,7 +106,31 @@ githubRequest.addEventListener("load", function(){
     }  
 });
 
+*/
 
+const url = 'https://api.github.com/users/Macy93/repos'
+const projectSelection = document.getElementById("projects");
+const projectList = projectSelection.querySelector('ul'); 
 
+fetch(url)
+    .then(response => response.json())
+    .then( (response) => { 
+     
+      
+      
+        var repositories = response;    
+        console.log(repositories);  
+    
+        for(i = 0; i < repositories.length; i++){
+          const project = document.createElement('li');
+           project.innerText = repositories[i].name;  
+           projectList.appendChild(project);   
+            
+        }  
+    });
+
+  trycatch(error => console.log('Looks like there was a problem!', error))
+
+    
 
 

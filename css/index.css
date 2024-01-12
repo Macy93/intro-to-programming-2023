@@ -78,6 +78,23 @@ button {
     font-size: 18px;
 }
 
+#projects {
+    background-color:D77A61;
+    padding: 6px;
+}
+
+#projects ul{
+    margin-left: 50px; 
+    font-size: 18px;
+}
+
+#projects h1{
+    font-size: 40;
+    font-weight: bold;
+    color: 424651;
+}
+
+
 #connect{
     background-color: eeb4b3;
     padding:6px;
