@@ -10,7 +10,7 @@ copyright.innerHTML= `&copy; Michelle Wagner ${thisYear}`;
 
 footer.appendChild(copyright);
 
-const skills = ['Programming in JavaScript, HTML, CSS','3 years customer service','1 year warehouse','knowledge in using a cash register','problem solving'];
+const skills = ['Programming in JavaScript, HTML, CSS','3 years customer service','1 year warehouse','Knowledge in using a cash register','Problem solving'];
 
 const skillsSection = document.querySelector('#skills');
 
